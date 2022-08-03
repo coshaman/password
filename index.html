@@ -93,12 +93,12 @@ https://templatemo.com/tm-548-training-studio
             const class_A = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890".split('');
             const class_C = "abcdefghijklmnopqrstuvwxyz".split('');
             const class_D = "!@#".split('');
-            var passowrd = class_C[Math.floor(Math.random() * class_C.length)];
+            var password = class_C[Math.floor(Math.random() * class_C.length)];
             for(var i = 0;i < 6;i++){
                 password += class_A[Math.floor(Math.random() * class_A.length)];
             }
             password += class_D[Math.floor(Math.random() * class_D.length)];
-            document.getElementById("here").innerHTML = "<em id='here2SSS' onclick='Copyit();'>"+ password + "</em>";
+            document.getElementById("here").innerHTML = "<em id='here2' onclick='Copyit();'>"+ password + "</em>";
             document.getElementById("thisone").innerHTML = "비밀번호를 클릭해 복사하세요";
         }
         function copyToClipboard(val) {
